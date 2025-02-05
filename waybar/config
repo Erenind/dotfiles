@@ -156,7 +156,7 @@
     "tooltip": false
   },
   "custom/download": {
-    "format": " ",
+    "format": "  ",
     "on-click": "python ~/33/wallpaper/FetchWallpaperAndChange.py",
     "on-click-right": "sh ~/33/code/sh/RemoveCurrentWallpaper.sh",
     "tooltip": false
