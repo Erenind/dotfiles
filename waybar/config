@@ -9,6 +9,8 @@
 
   "modules-left": [
     "custom/launcher",
+    "custom/updates",
+    "custom/separator",
     "disk",
     "custom/separator",
     "hyprland/workspaces",
@@ -23,27 +25,37 @@
   "modules-right": [
     "cpu",
     "memory",
-    "temperature",
-    "custom/separator",
     "backlight",
     "pulseaudio",
     "custom/separator",
     "bluetooth",
-    "custom/separator",
     "network",
     "battery",
     "custom/separator",
+    "custom/wallpaper",
+    "custom/download",
     "custom/power"
   ],
   "custom/launcher": {
     "format": "  ",
-    "on-click": "rofi -show drun"
+    "on-click": "rofi -show drun -show-icons",
+    "tooltip": false
+  },
+  "custom/updates": {
+    "format": " {}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/33/code/sh/updates.sh",
+    "restart-interval": 60,
+    "tooltip": false
   },
    "disk": {
     "interval": 1,
-    "format": "<span color=\"#68b0d6\"></span> {}%",
-    "on-click": "dolphin /home/kyee/",
-    "on-click-right": "dolphin /"
+    "format": "<span color=\"#68b0d6\"></span> {percentage_used}%",
+    "tooltip-format":"Totle: {total}\nUsed: {used} {percentage_used}%\nFree: {free} {percentage_free}%",
+    "on-click": "nautilus /home/kyee/",
+    "on-click-right": "nautilus /"
   },
   "hyprland/workspaces": {
     "all-outputs": true,
@@ -71,33 +83,29 @@
   },
 
   "clock": {
-    "format": "<b>{:%I:%M %p }</b>",
-    "format-alt": "<b>{:%a.%d,%b}</b>",
-    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "<b>{:%I:%M %p}</b>",
+    "tooltip-format": "<big>{:%d %b %a}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
   "cpu": {
     "interval": 10,
-    "format": " {usage}% ",
+    "format": " {usage}%",
     "max-length": 10,
     "on-click": "htop"
   },
   "memory": {
     "interval": 30,
-    "format": " {}% ",
+    "format": " {}%",
     "format-alt": " {used:0.1f}G",
     "max-length": 10,
     "on-click-right": "htop"
   },
-  "temperature": {
-    "thermal-zone": 0,
-    "critical-threshold": 80,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C"
-  },
+  
   "backlight": {
     "device": "amdgpu_bl1",
-    "format": "{icon} {percent} ",
+    "format": "{icon} <b>{percent}</b> ",
+    "on-scroll-up": "brightnessctl s 5%+",
+    "on-scroll-down": "brightnessctl s 5%-",
     "tooltip": false,
     "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
@@ -108,13 +116,13 @@
     "tooltip": false,
     "format-muted": "",
     "format-icons": {
-      "default": ["󰝟", "", "󰕾" , ""]
+      "default": ["", "󰕾", ""]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol"
   },
   "bluetooth": {
-    "format": "󰂯 {device_alias}",
+    "format": "󰂯{device_alias} ",
     "format-off": "󰂲",
     "format-disabled": "󰂲",
     "on-click": "blueman-manager",
@@ -135,14 +143,26 @@
       "warning": 30,
       "critical": 15
     },
-    "format": " {icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "max-length": 25,
     "tooltip": false
   },
+  "custom/wallpaper": {
+    "format": "  ",
+    "on-click":"waypaper --random",
+    "on-click-right": "waypaper",
+    "tooltip": false
+  },
+  "custom/download": {
+    "format": " ",
+    "on-click": "python ~/33/wallpaper/FetchWallpaperAndChange.py",
+    "on-click-right": "sh ~/33/code/sh/RemoveCurrentWallpaper.sh",
+    "tooltip": false
+  },
   "custom/power": {
-    "format" : "⏻  ",
+    "format" : " ⏻  ",
 		"tooltip": false,
     "on-click": "shutdown now"
   },
