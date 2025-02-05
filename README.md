@@ -1,6 +1,8 @@
-# dotfiles
-archlinux and hyprland
-![](2025-01-11-144702_hyprshot.png)
-![](2025-01-11-143435_hyprshot.png)
-![](2025-01-11-143508_hyprshot.png)
-![](2025-01-11-143518_hyprshot.png)
+# 效果
+**waybar**
+![](2025-02-05-212606_hyprshot.png)
+**hyprland**
+![](2025-01-25-224349_hyprshot.png)
+**rofi**
+![](2025-02-05-213206_hyprshot.png)
+
