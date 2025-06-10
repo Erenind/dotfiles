@@ -1,0 +1,62 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: transparent;
+}
+
+button {
+  border:none;
+  color: #cad3f5;
+  background-color: rgba(73, 77, 100,0.5);
+  background-repeat: no-repeat;
+	background-position: center;
+  margin: 100px 0;
+  outline-style: none;
+  background-size: 30%;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+button:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+button:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+button:focus, button:active, button:hover {
+	outline-style: none;
+}
+button:focus {
+  background-color: rgba(30, 32, 48,0.9);
+}
+button:active {
+  background-color: rgba(36, 39, 58,0.6);
+}
+button:hover {
+  background-color: rgba(30, 32, 48,0.9);
+}
+
+#lock {
+    background-image: image(url("/home/kyee/.config/wlogout/lock_white.png")),image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/kyee/.config/wlogout/logout_white.png")),image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/kyee/.config/wlogout/shutdown_white.png")),image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/kyee/.config/wlogout/reboot_white.png")),image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

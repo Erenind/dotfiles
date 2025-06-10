@@ -1,0 +1,20 @@
+configuration {
+ modi: "window,drun,ssh,combi";
+ font: "hack 10";
+ combi-modi: "window,drun,ssh";
+ icon-theme: "Papirus";
+}
+
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
+
+/* Light theme. */
+@import "~/.cache/wal/colors-rofi-light"
+
+//@theme "/home/kyee/.config/rofi/themes/kkery.rasi"
+
+//@theme "/home/kyee/.config/rofi/themes/rounded-nord-dark.rasi"
+
+//@theme "/home/kyee/.config/rofi/themes/kkery.rasi"
+
+@theme "/home/kyee/.config/rofi/themes/rounded-nord-dark.rasi"

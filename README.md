@@ -1,4 +1,27 @@
-# 效果
+# 2025-06
+- add hyprland plugins:hyprexpo,hyprspace
+- use pywal to change waybar rofi and hyprland border colors.
+- add some notifycation:low battery, charging notification,full battery notification,discharging notification,get random wallpaper,remove wallpaper.
+- add increase volume, decrease volume, mute volume, increase brightness, decrease brightness notificaiton.
+- add wlogout
+- change hyprland animation
+- waybar add buttions:hidden waybar,change caps lock to esc
+
+## previews
+<b>rofi & waybar</b><br/>
+<img src="2025-06-10-121810_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<br/>
+<b>pywal & hyprland border</b><br/>
+<img src="2025-06-10-121653_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<img src="2025-06-10-121716_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<br/>
+<b>wlogout</b><br/>
+<img src="2025-06-10-121841_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+
+
+
+# 2025-02
+## 效果
 | hyprland | waybar | rofi |
 | --- | --- | --- |
 |![](2025-02-05-225948_hyprshot.png) | ![](2025-02-05-230009_hyprshot.png) | ![](2025-02-05-230003_hyprshot.png) |

@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "fittencode.languagePreference.displayPreference": "zh-cn",
+    "fittencode.languagePreference.commentPreference": "zh-cn",
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+    "apc.imports": [
+        "file:///home/kyee/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.1-universal/dist/updateHandler.js"
+    ],
+    "http.proxy": "http://127.0.0.1:10809/",
+    "animations.Enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 16,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
+    "http.proxyAuthorization": null,
+    "vim.handleKeys":{
+        "<C-p>": false,
+    },
+    "keyboard.dispatch": "keyCode",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "compact"
+}
