@@ -19,6 +19,7 @@
 <br/>
 <b>wlogout</b><br/>
 <img src="2025-06-10-121841_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<br/>
 <b>notifications</b><br/>
 <img src="2025-06-10-124821_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
 <img src="2025-06-10-124231_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
