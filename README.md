@@ -6,6 +6,8 @@
 - add wlogout
 - change hyprland animation
 - waybar add buttions:hidden waybar,change caps lock to esc
+- waybar update packages show through tooltip
+
 
 ## previews
 <b>rofi & waybar</b><br/>
@@ -17,8 +19,11 @@
 <br/>
 <b>wlogout</b><br/>
 <img src="2025-06-10-121841_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
-
-
+<b>notifications</b><br/>
+<img src="2025-06-10-124821_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<img src="2025-06-10-124231_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<img src="2025-06-10-124244_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
+<img src="2025-06-10-124301_hyprshot.png" alt="2025-06-10-121810_hyprshot" width="500" />
 
 # 2025-02
 ## 效果
